@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.adino.kalkulator.MainActivity">
+
+    <TextView
+        android:id="@+id/textCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Calculator"
+        android:textColor="#FFF"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/mainTopGuidline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btnSimple"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Simple"
+        android:textSize="15sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnAdvanced"
+        app:layout_constraintEnd_toEndOf="@+id/rightSideGuidline"
+        app:layout_constraintStart_toStartOf="@+id/leftSideGuidline" />
+
+    <Button
+        android:id="@+id/btnAdvanced"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Advanced"
+        android:textSize="15sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnAbout"
+        app:layout_constraintEnd_toEndOf="@+id/rightSideGuidline"
+        app:layout_constraintStart_toStartOf="@+id/leftSideGuidline" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="15sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnExit"
+        app:layout_constraintEnd_toEndOf="@+id/rightSideGuidline"
+        app:layout_constraintStart_toStartOf="@+id/leftSideGuidline" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:textSize="15sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/mainBottomGuidline"
+        app:layout_constraintEnd_toEndOf="@+id/rightSideGuidline"
+        app:layout_constraintStart_toStartOf="@+id/leftSideGuidline" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/mainTopGuidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/leftSideGuidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/rightSideGuidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/mainBottomGuidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+</android.support.constraint.ConstraintLayout>
